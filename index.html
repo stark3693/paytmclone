@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Paytm-Clone</title>
+</head>
+
+<body class="bg-[#f5f7fa]">
+
+    <!-- Navbar -->
+
+    <header class="p-4 bg-white dark:text-gray-100 ">
+        <div class="container flex justify-between h-14 mx-auto  ">
+            <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2 ">
+                <img src="./Assets/paytm_logo.png" alt="paytmlogo" class="w-[180px] h-[55px]  ">
+            </a>
+            <ul class="items-stretch hidden space-x-[5px] lg:flex mr-19 justify-center">
+                <li class="flex p-[3px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="flex items-center p-[12px] font-[600] hover:shadow-inner hover:bg-gray-100 text-[16px]">Paytm
+                        For Customer</a>
+                </li>
+                <li class="flex p-[3px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="flex items-center p-[12px] font-[600] hover:shadow-inner hover:bg-gray-100 text-[16px]">Paytm
+                        For Business</a>
+                </li>
+                <li class="flex p-[3px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="flex items-center p-[12px]  font-[600] hover:shadow-inner hover:bg-gray-100 text-[16px]">Company</a>
+                </li>
+                <li class="flex p-[3px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="flex items-center p-[12px]  font-[600] hover:shadow-inner hover:bg-gray-100 text-[16px]">Investor
+                        Relations</a>
+                </li>
+                <li class="flex p-[3px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="flex items-center p-[12px]  font-[600] hover:shadow-inner hover:bg-gray-100 text-[16px]">Career</a>
+                </li>
+            </ul>
+            <div
+                class="items-center justify-end flex-shrink-0 hidden lg:flex bg-[#00baf2] border-[#00baf2] rounded-[20px] h-[38px] w-[115px] mt-2 cursor-pointer hover:bg-[#00146c] group ">
+                <button class="self-center pr-1 pt-1 pb-1  rounded text-white ml-5 mr-1 font-bold text-[15px]">Sign
+                    in</button>
+                <!--  <img src="./Assets/signin.svg" alt="signin" class=" rounded-[10px] mr-[2px] hover:fill-[#00baf2] "> -->
+                <svg class=" rounded-[10px] mr-[2px]  " width="34" height="34" viewBox="0 0 34 34" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="17" cy="17" r="17" fill="#00146c" class="group-hover:fill-[#00baf2]" />
+                    <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <button class="p-4 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-6 h-6 dark:text-gray-100">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- textbar -->
+
+    <h1 class="text-center text-[15px] p-[1px] bg-transparent"> <span class="font-[600] ">No Wallet KYC Required</span>
+        <span class="text-[25px]">😊</span>
+        to pay using UPI on Paytm.
+        <a href="#" class="font-[600] ">Learn more.</a>
+    </h1>
+
+
+    <!-- Scetion one -->
+
+    <section class="dark:bg-gray-800 dark:text-gray-100 bg-white">
+        <div
+            class="container flex flex-col justify-center pl-1 mx-auto sm:py-12 lg:py-10 lg:flex-row lg:justify-between">
+
+            <div
+                class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left ml-[40px] mt-[50px] ">
+                <div>
+                    <img src="./Assets/firstLeft.png" alt="" class="w-[70px] mb-10 ">
+                </div>
+                <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[60px] lg:text-[51px] mb-3">
+                    India's
+                    Most-loved Payments App
+                </h1>
+                <p class=" text-lg sm:mb-10 text-[20px]">Recharge & pay bills, book flights & movie tickets,
+                    open
+                    a
+                    savings
+                    account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+                <div
+                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                        Paytm App
+                    </a>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[90px] "
+                id="firstRight">
+                <img src="assets/firstRight.png" alt=""
+                    class="object-contain h-72 sm:h-80 lg:h-[460px] xl:h-112 2xl:h-128 ">
+            </div>
+        </div>
+    </section>
+
+    <!-- Scetion Two -->
+    <section>
+
+
+        <div class="p-6 py-2 bg-[#00baf2]">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between ml-[65px] mt-10 ">
+                    <h1 class="text-center tracking-tighter font-bold text-[36px] text-white">Recharge & Pay
+                        Bills
+                        on Paytm.
+                    </h1>
+                </div>
+                <div
+                    class="container flex flex-wrap justify-center pl-1 mx-auto sm:py-12 md: flex flex-wrap lg:py-10 lg:flex-row lg:justify-start space-x-4  ml-[65px]">
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon1.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Recharge Prepaid
+                            <br>
+                            Mobile >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon2.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight ">Pay
+                            <br>
+                            Rent
+                            <br>
+                            Payment >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon3.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight ">Pay
+                            <br>
+                            Electricity
+                            <br>
+                            Bill >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon4.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Recharge
+                            <br>
+                            DTH
+                            <br>
+                            Connection >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon5.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Book
+                            <br>
+                            Gas
+                            <br>
+                            Cylinder >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon6.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight ">Pay
+                            <br>
+                            Credit
+                            <br>
+                            Card Bill >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[150px] h-[185px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Sicon7.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">All
+                            <br>
+                            Payment
+                            <br>
+                            Services >
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Scetion Three -->
+
+    <section>
+        <div class="p-6 py-2 bg-[#0f4a8a]">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between ml-[65px] mt-10 ">
+                    <h1 class="text-center tracking-tighter font-bold text-[36px] text-white">Book & Buy on Paytm.
+                    </h1>
+                </div>
+                <div
+                    class="container flex flex-wrap justify-center pl-1 mx-auto sm:py-12 md: flex flex-wrap lg:py-10 lg:flex-row lg:justify-start items-center space-x-4 ml-[65px]">
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-center">
+                        <figure><img src="./Assets/Ticon1.png" alt="Shoes" class="w-[64px] h-[64px] mb-[17px]" />
+                        </figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Movie
+                            <br>
+                            Tickets >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Ticon2.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Flight
+                            <br>
+                            Tickets >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Ticon3.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Bus
+                            <br>
+                            Tickets >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Ticon4.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Train
+                            <br>
+                            Tickets >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Ticon5.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Car & <br>
+                            Bikes >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Ticon6.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">International
+                            <br>
+                            Flights >
+                        </h2>
+                    </div>
+                    <div
+                        class="card w-[153px] h-[158px] bg-transparent p-[16px] pr-[11px] hover:shadow-xl cursor-pointer flex flex-col items-start justify-around">
+                        <figure><img src="./Assets/Ticon7.png" alt="Shoes" class="w-[64px] mb-[17px]" /></figure>
+                        <h2 class="card-title text-[17px] text-white text-left leading-tight">Invest in
+                            <br>Stocks >
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Section Four -->
+
+    <section class="mb-[48px]">
+        <h1 class="mt-[80px] mb-[20px] ml-[140px] text-[42px] font-[700]">Paytm Payment Instruments</h1>
+        <div class=" w-[1110px] h-[630px] mx-auto bg-white rounded-[10px]">
+            <div
+                class="container flex flex-col justify-center mx-auto sm: py-12 lg:flex-row lg:justify-center  py-[80px] pl-[115px] pr-[50px]  w-[1110px] h-[630px]">
+                <div
+                    class="flex flex-col justify-center text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left space-x-1  ">
+                    <div class="flex flex-row items-center">
+                        <img src="./Assets/fourLeft.png" alt="" class="w-[70px] mb-10 ">
+                        <p class="mt-[-30px] ml-[10px] font-[700]">Paytm <br>
+                            Wallet</p>
+                    </div>
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                        The Fastest Way to <br> Pay In-store & Online.
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">Load up your Paytm Wallet for free and make payments in a
+                        jiffy
+                        at over 21 million stores, websites and apps.
+                    </p>
+                    <div
+                        class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                        <a rel="noopener noreferrer" href="#"
+                            class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                            Paytm App
+                        </a>
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
+                    id="firstRight">
+                    <img src="assets/fourRight.png" alt=""
+                        class="object-contain mt-[100px] h-72 sm:h-80 lg:h-[460px] w-[540px] xl:h-112 2xl:h-128 ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Five -->
+
+    <section class="mb-[48px]">
+        <div class=" w-[1110px] h-[630px] mx-auto bg-white rounded-[10px]">
+            <div
+                class="container flex flex-col justify-center mx-auto sm: py-12 lg:flex-row lg:justify-center  py-[80px] pl-[115px] pr-[50px] w-[1110px] h-[630px]">
+                <div
+                    class="flex flex-col justify-center  text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left   ">
+                    <div class="flex flex-row items-center">
+                        <img src="./Assets/fiveLeft.png" alt="" class="w-[70px] mb-10 ">
+                        <p class="mt-[-30px] ml-[10px] font-[700]">UPI Money <br> Transfer
+                    </div>
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                        Pay anyone directly <br> from your bank <br> account.
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">Pay anyone, everywhere. Make contactless & secure payments
+                        in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive
+                        money from anyone.
+                    </p>
+                    <div
+                        class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                        <a rel="noopener noreferrer" href="#"
+                            class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                            Paytm App
+                        </a>
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
+                    id="firstRight">
+                    <img src="assets/fiveRight.png" alt=""
+                        class="object-contain mt-[100px] h-72 sm:h-80 lg:h-[460px] w-[540px] xl:h-112 2xl:h-128">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Six -->
+
+    <section class="mb-[48px]">
+        <div class=" w-[1110px] h-[630px] mx-auto bg-white rounded-[10px]">
+            <div
+                class="container flex flex-col justify-center mx-auto sm: py-12 lg:flex-row lg:justify-center  py-[80px] pl-[115px] pr-[50px] w-[1110px] h-[630px]">
+                <div
+                    class="flex flex-col justify-center  text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left   ">
+                    <div class="flex flex-row items-center">
+                        <img src="./Assets/sixLeft.png" alt="" class="w-[180px] mb-10 ">
+                    </div>
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                        Want it? <br>
+                        No more waiting for it.
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">With Paytm Postpaid, your wishlist doesn't have to be on
+                        the waitlist. Shop for the things you want today and pay for them next month.
+                    </p>
+                    <div
+                        class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                        <button
+                            class="self-center pr-1 pt-1 pb-1  rounded text-white ml-5 mr-1 font-bold text-[15px]">Sign
+                            in</button>
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
+                    id="firstRight">
+                    <img src="assets/sixRight.png" alt=""
+                        class="object-contain mt-[100px] h-72 sm:h-80 lg:h-[460px] w-[540px] xl:h-112 2xl:h-128">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Seven -->
+
+    <section class="mb-[100px]">
+        <div
+            class="bg-transparent container flex flex-col mx-auto justify-center lg:flex-row lg:justify-between items-center w-[1110px] space-x-4 ">
+            <div class="bg-white rounded-[10px]">
+                <div class="flex flex-col justify-around pt-[70px] px-[65px] w-[530px] h-[680px]">
+                    <div class="flex flex-row items-center">
+                        <img src="./Assets/sevenLeft.png" alt="" class="w-[180px] mb-10 ">
+                    </div>
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                        Want it? <br>
+                        No more waiting for it.
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">With Paytm Postpaid, your wishlist doesn't have to be on
+                        the waitlist. Shop for the things you want today and pay for them next month.
+                    </p>
+                    <img src="assets/sevenLeft1.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[300px] w-[465px] xl:h-112 2xl:h-128">
+                </div>
+            </div>
+            <div class="bg-white rounded-[10px]">
+                <div
+                    class="bg-white pt-[70px] px-[65px] w-[530px] h-[680px] rounded-[10px] flex flex-col justify-around">
+                    <div class="flex flex-row items-center">
+                        <img src="./Assets/sevenRight.png" alt="" class="w-[180px] mb-10 ">
+                    </div>
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                        India’s Most
+                        Sincere Credit Card
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">India’s Most
+                        Sincere Credit Card
+                    </p>
+                    <img src="assets/sevenRight1.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[300px] w-[465px] xl:h-112 2xl:h-128">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Eight -->
+
+    <section class="dark:bg-gray-800 dark:text-gray-100 bg-white">
+        <div
+            class="container flex flex-col justify-center pl-1 mx-auto sm:py-12 lg:py-10 lg:flex-row lg:justify-center">
+
+            <div
+                class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left ml-[40px] mt-[50px] ">
+                <div>
+                    <img src="./Assets/eightLeft.png" alt="" class="w-[70px] mb-10 ">
+                </div>
+                <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[60px] lg:text-[51px] mb-3">
+                    India's
+                    Most-loved Payments App
+                </h1>
+                <p class=" text-lg sm:mb-10 text-[20px]">Recharge & pay bills, book flights & movie tickets,
+                    open
+                    a
+                    savings
+                    account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+                <div
+                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                        Paytm App
+                    </a>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[90px] mr-[-50px]"
+                id="firstRight">
+                <img src="assets/eightRight.png" alt=""
+                    class="object-contain h-72 sm:h-80 lg:h-[460px] xl:h-112 2xl:h-128 ">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nine -->
+
+    <section class="dark:bg-gray-800 dark:text-gray-100 bg-transparent">
+        <div
+            class="container flex flex-col justify-center pl-1 mx-auto sm:py-12 lg:py-10 lg:flex-row lg:justify-center">
+            <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[90px] mr-[-50px]"
+                id="firstRight">
+                <img src="assets/nineLeft.png" alt=""
+                    class="object-contain h-72 sm:h-80 lg:h-[460px] xl:h-112 2xl:h-128 ">
+            </div>
+            <div
+                class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left ml-[40px] mt-[50px] ">
+                <div>
+                    <img src="./Assets/nineRight.png" alt="" class="w-[70px] mb-10 ">
+                </div>
+                <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[60px] lg:text-[51px] mb-3">
+                    India's
+                    Most-loved Payments App
+                </h1>
+                <p class=" text-lg sm:mb-10 text-[20px]">Recharge & pay bills, book flights & movie tickets,
+                    open
+                    a
+                    savings
+                    account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+                <div
+                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                        Paytm App
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Ten -->
+
+    <section class="dark:bg-gray-800 dark:text-gray-100 bg-white">
+        <div
+            class="container flex flex-col justify-center pl-1 mx-auto sm:py-12 lg:py-10 lg:flex-row lg:justify-center">
+
+            <div
+                class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left ml-[40px] mt-[50px] ">
+                <div>
+                    <img src="./Assets/tenLeft.jpeg" alt="" class="w-[70px] mb-10 ">
+                </div>
+                <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[60px] lg:text-[51px] mb-3">
+                    India's
+                    Most-loved Payments App
+                </h1>
+                <p class=" text-lg sm:mb-10 text-[20px]">Recharge & pay bills, book flights & movie tickets,
+                    open
+                    a
+                    savings
+                    account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+                <div
+                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                        Paytm App
+                    </a>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[90px] mr-[-50px]"
+                id="firstRight">
+                <img src="assets/tenRight.png" alt=""
+                    class="object-contain h-72 sm:h-80 lg:h-[460px] xl:h-112 2xl:h-128 ">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Eleven -->
+
+    <section class="dark:bg-gray-800 dark:text-gray-100 bg-transparent">
+        <div
+            class="container flex flex-col justify-center pl-1 mx-auto sm:py-12 lg:py-10 lg:flex-row lg:justify-center">
+            <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[90px] mr-[-50px]"
+                id="firstRight">
+                <img src="assets/elevenLeft.png" alt=""
+                    class="object-contain h-72 sm:h-80 lg:h-[460px] xl:h-112 2xl:h-128 ">
+            </div>
+            <div
+                class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left ml-[40px] mt-[50px] ">
+                <div>
+                    <img src="./Assets/elevenRight.png" alt="" class="w-[70px] mb-10 ">
+                </div>
+                <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[60px] lg:text-[51px] mb-3">
+                    India's
+                    Most-loved Payments App
+                </h1>
+                <p class=" text-lg sm:mb-10 text-[20px]">Recharge & pay bills, book flights & movie tickets,
+                    open
+                    a
+                    savings
+                    account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+                <div
+                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                    <a rel="noopener noreferrer" href="#"
+                        class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                        Paytm App
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Twelve -->
+
+    <section class="bg-white pb-[48px]">
+        <h1 class="mt-[80px] mb-[20px] ml-[140px] text-[42px] font-[700]">Paytm Payment Instruments</h1>
+        <div class="space-y-10">
+            <div class=" w-[1110px] h-[630px] mx-auto bg-[#f5f7fa] rounded-[10px]">
+                <div
+                    class="container flex flex-col justify-center mx-auto sm: py-12 lg:flex-row lg:justify-center  py-[80px] pl-[115px] pr-[50px]  w-[1110px] h-[630px] ">
+                    <div
+                        class="flex flex-col justify-center text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left space-x-1  ">
+                        <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                            The Fastest Way to <br> Pay In-store & Online.
+                        </h1>
+                        <p class=" text-lg sm:mb-10 text-[18px]">Load up your Paytm Wallet for free and make payments in
+                            a
+                            jiffy
+                            at over 21 million stores, websites and apps.
+                        </p>
+                        <div
+                            class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                                Paytm App
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
+                        id="firstRight">
+                        <img src="assets/twelveRight.png" alt=""
+                            class="object-contain mt-[100px] h-72 sm:h-80 lg:h-[460px] w-[540px] xl:h-112 2xl:h-128 ">
+                    </div>
+                </div>
+            </div>
+            <div class=" w-[1110px] h-[630px] mx-auto bg-[#f5f7fa] rounded-[10px]">
+                <div
+                    class="container flex flex-col justify-center mx-auto sm: py-12 lg:flex-row lg:justify-center  py-[80px] pl-[115px] pr-[50px]  w-[1110px] h-[630px] ">
+                    <div
+                        class="flex flex-col justify-center text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left space-x-1  ">
+                        <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[36px] mb-3">
+                            The Fastest Way to <br> Pay In-store & Online.
+                        </h1>
+                        <p class=" text-lg sm:mb-10 text-[18px]">Load up your Paytm Wallet for free and make payments in
+                            a
+                            jiffy
+                            at over 21 million stores, websites and apps.
+                        </p>
+                        <div
+                            class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start bg-black text-white border-1 border-black rounded-[50px] cursor-pointer hover:bg-white hover:text-black w-[230px]">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-5 py-2 text-[15px] font-[400] border rounded dark:border-gray-100 border-1 border-black rounded-[50px] w-[230px]">Download
+                                Paytm App
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center pl-6 mt-10 lg:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
+                        id="firstRight">
+                        <img src="assets/thirteenRight.png" alt=""
+                            class="object-contain mt-[100px] h-72 sm:h-80 lg:h-[460px] w-[540px] xl:h-112 2xl:h-128 ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Fourteen -->
+
+    <section class="bg-white">
+        <h1 class="mb-[20px] ml-[140px] text-[42px] font-[700]">Business Tools to help <br> your business grow
+        </h1>
+
+        <div class="flex justify-between w-[1110px] mx-auto">
+
+            <div class="flex-col justify-start h-[500px] w-[210px]">
+                <div class=""><img src="assets/icon-14-1.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[220px] w-[240px] xl:h-112 2xl:h-128"></div>
+                <div class="bg-white rounded-[10px] flex flex-col justify-center">
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[24px] mb-3">
+                        POS Billing
+                        Software
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">Say Hello to Smart Retail Business Management
+                    </p>
+                    <p class="cursor-pointer font-[600]">Learn More</p>
+                </div>
+            </div>
+
+
+            <div class="flex-col justify-start h-[500px] w-[210px] ">
+                <div class=""><img src="assets/icon-14-2.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[220px] w-[240px] xl:h-112 2xl:h-128">
+                </div>
+                <div class="bg-white rounded-[10px] flex flex-col justify-center">
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[24px] mb-3">
+                        Paytm for
+                        Business App
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">Everything you need to manage your business <br> on your
+                        phone
+                    </p>
+                    <p class="cursor-pointer font-[600]">Learn More</p>
+                </div>
+            </div>
+
+
+            <div class="flex-col justify-start h-[500px] w-[210px] ">
+                <div class=""><img src="assets/icon-14-3.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[220px] w-[240px] xl:h-112 2xl:h-128">
+                </div>
+                <div class="bg-white rounded-[10px] flex flex-col justify-center">
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[24px] mb-3">
+                        Advertise on
+                        Paytm
+                    </h1>
+                    <p class=" text-lg sm: mb-10 text-[18px]">Grow your business by advertising on India’s largest
+                        mobile business
+                    </p>
+                    <p class="cursor-pointer font-[600]">Learn More</p>
+                </div>
+            </div>
+
+
+            <div class="flex-col justify-start h-[500px] w-[210px] ">
+                <div class=""><img src="assets/icon-14-4.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[220px] w-[240px] xl:h-112 2xl:h-128 ">
+                </div>
+                <div class="bg-white rounded-[10px] flex flex-col justify-center">
+                    <h1 class="text-5xl font-bold leading-none sm:text-6xl lg:leading-[45px] lg:text-[24px] mb-3">
+                        Business <br>
+                        Khata
+                    </h1>
+                    <p class=" text-lg sm:mb-10 text-[18px]">Managing Khata made easy
+                    </p>
+                    <p class="cursor-pointer font-[600]">Learn More</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Fifteen -->
+    <section class="bg-white">
+
+        <div class="flex justify-between w-[1170px] h-[360px] mx-auto items-center pt-[60px] pl-[60px]">
+            <div class="flex flex-col justify-between items-start h-[230px] w-[200px] mr-[40px] ">
+                <div class=""><img src="assets/icon-15-1.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[60px] w-[150px] xl:h-112 2xl:h-128 ">
+                </div>
+                <div class="bg-white rounded-[10px] flex flex-col justify-center">
+                    <p class=" text-lg text-[15px] mt-[15px]">Get started on wealth creation journey with Zero brokerage
+                        fee & no hidden charges.
+                    </p>
+                    <p class="cursor-pointer font-[600] mt-[10px] text-[#00baf2] text-[17px]">Learn More</p>
+                </div>
+            </div>
+            <div class="relative w-full flex justify-between gap-4 py-6 overflow-x-auto">
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] flex flex-col justify-start items-center  rounded-[10px] cursor-pointer ">
+                    <div class="overflow-hidden"><img
+                            class="w-[145px] h-[158px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500 hover:scale-105"
+                            src="./Assets/icon-15-2.png" alt="Image 1">
+                    </div>
+                    <p class="text-[17px] py-[8px] text-center w-[115px]">Invest in Stocks</p>
+
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] flex flex-col justify-start items-center  rounded-[10px] cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-[145px] h-[158px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500 hover:scale-105"
+                            src="./Assets/icon-15-3.png" alt="Image 2">
+                    </div>
+
+                    <p class="text-[17px] py-[8px] text-center w-[115px]">Apply for IPO</p>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px]  flex flex-col justify-start items-center  rounded-[10px] cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-[145px] h-[158px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500 hover:scale-105"
+                            src="./Assets/icon-15-4.png" alt="Image 3">
+                    </div>
+                    <p class="text-[17px] py-[8px] text-center w-[115px]">Invest in ETFs</p>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px]  flex flex-col justify-start items-center  rounded-[10px] cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-[145px] h-[158px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500 hover:scale-105"
+                            src="./Assets/icon-15-5.png" alt="Image 4">
+                    </div>
+                    <p class="text-[17px] py-[8px] text-center w-[115px]">Buy Gold</p>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px]  flex flex-col justify-start items-center  rounded-[10px] cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-[145px] h-[158px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500 hover:scale-105"
+                            src="./Assets/icon-15-6.png" alt="Image 5">
+                    </div>
+                    <span class="text-[17px] py-[8px] text-center w-[115px]">Invest in Mutual Funds <span />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-between w-[1170px] h-[360px] pt-[60px] pl-[60px] mx-auto items-center">
+            <div class="flex flex-col justify-between items-start h-[230px] w-[200px] mr-[40px] ">
+                <div class=""><img src="./Assets/icon-16-1.png" alt=""
+                        class="object-contain h-72 sm:h-80 lg:h-[60px] w-[150px] xl:h-112 2xl:h-128 ">
+                </div>
+                <div class="bg-white rounded-[10px] flex flex-col justify-center">
+                    <p class=" text-lg text-[15px] mt-[15px]">Get started on wealth creation journey with Zero brokerage
+                        fee & no hidden charges.
+                    </p>
+                    <p class="cursor-pointer font-[600] mt-[10px] text-[#00baf2] text-[17px]">Learn More</p>
+                </div>
+            </div>
+            <div class="relative w-full flex justify-between gap-4 py-6 overflow-x-auto">
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] pl-[10px] flex flex-col justify-around items-start rounded-[10px] cursor-pointer">
+                    <div class=""><img
+                            class="w-[72px] h-[72px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500"
+                            src="./Assets/icon-16-2.png" alt="Image 1">
+                    </div>
+                    <div class=""><span class="text-[17px] py-[16px] text-center w-[115px]">
+                            Flat 14% Cashback</span>
+                        <span class="text-[17px] py-[16px] text-center w-[115px]">With Code <br> WELCOMEFLIGHT</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] pl-[10px] flex flex-col justify-around items-start rounded-[10px] cursor-pointer">
+                    <div class="">
+                        <img class="w-[72px] h-[72px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500"
+                            src="./Assets/icon-16-3.png" alt="Image 2">
+                    </div>
+                    <div class=""><span class="text-[17px] py-[16px] text-center w-[115px]">
+                            100% Refund</span>
+                        <span class="text-[17px] py-[16px] text-center w-[115px]">With Paytm's Cancellation
+                            Protect</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] pl-[10px] flex flex-col justify-around items-start rounded-[10px] cursor-pointer">
+                    <div class="">
+                        <img class="w-[72px] h-[72px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500"
+                            src="./Assets/icon-16-4.png" alt="Image 3">
+                    </div>
+                    <div class=""><span class="text-[17px] py-[16px] text-center w-[115px]">
+                            Flat 10% Cashback</span>
+                        <span class="text-[17px] py-[16px] text-center w-[115px]">With Code HAPPYBUS</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] pl-[10px] flex flex-col justify-around items-start rounded-[10px] cursor-pointer">
+                    <div class="">
+                        <img class="w-[72px] h-[72px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500"
+                            src="./Assets/icon-16-5.png" alt="Image 4">
+                    </div>
+                    <div class=""><span class="text-[17px] py-[16px] text-center w-[115px]">
+                            Sanitised Bus Options With TravelSafe+</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] pl-[10px] flex flex-col justify-around items-start rounded-[10px] cursor-pointer">
+                    <div class="">
+                        <img class="w-[72px] h-[72px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500"
+                            src="./Assets/icon-16-6.png" alt="Image 5">
+                    </div>
+                    <div class="">
+                        <span class="text-[17px] py-[16px] text-center w-[115px]">
+                            Hassle Free Train Ticket Bookings</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#00baf2] text-[white] h-[240px] w-[155px] py-[5px] pl-[10px] flex flex-col justify-around items-start rounded-[10px] cursor-pointer">
+                    <div class="">
+                        <img class="w-[72px] h-[72px] aspect-video rounded-sm object-cover object-center dark:bg-gray-500"
+                            src="./Assets/icon-16-6.png" alt="Image 6">
+                    </div>
+                    <div class="">
+                        <span class="text-[17px] py-[16px] text-center w-[115px]"> PNR Status Check In Few Simple
+                            Clicks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+
+    <footer class="bg-[#f5f7fa] py-6">
+        <div class="container mx-auto w-[1180px] h-[700px] ">
+            <div class=" flex flex-col justify-between p-4 text-center md:p-10 lg:px-[0px] lg:flex-row items-center ">
+                <div class="flex flex-row justify-start lg:text-left">
+                    <div class="">
+                        <h1 class="py-2 text-[20px] font-[600]">Download Paytm App <br> to Pay
+                            from
+                            anywhere
+                        </h1>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-0 lg:ml-2 lg:mt-0 lg:justify-end">
+                        <div
+                            class="inline-flex items-center px-6 py-3 rounded-lg dark:bg-violet-400 dark:text-gray-900 ">
+                            <img src="./Assets/istore.svg" alt="">
+                        </div>
+                        <div
+                            class="inline-flex items-center px-6 py-3 rounded-lg dark:bg-violet-400 dark:text-gray-900 ">
+                            <img src="./Assets/playstore.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-7">
+                    <img src="./Assets/twitter.svg" alt="" class="w-[25px] h-[21px]">
+                    <img src="./Assets/instagram.svg" alt="" class="w-[25px] h-[21px]">
+                    <img src="./Assets/facebook.svg" alt="" class="w-[25px] h-[21px]">
+                </div>
+            </div>
+            <hr class="font-black">
+            <div class="">
+                <div class=" flex flex-col justify-start  mx-auto ">
+                    <div class="flex flex-col divide-y divide-offset-[10px]  divide-gray-700">
+                        <details>
+                            <summary class="py-2 outline-none cursor-pointer focus:underline">
+                                Investor Relations
+                            </summary>
+                            <div class="px-4 pb-4 flex flex-wrap justify-between">
+                                <h2>Home</h2>
+                                <h2>
+                                    Financials</h2>
+                                <h2>
+                                    Filings & Press Releases</h2>
+                                <h2>
+                                    News & Events</h2>
+                                <h2>
+
+                                    Corporate Governance</h2>
+                                <h2>
+                                    Resources</h2>
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="py-2 outline-none cursor-pointer focus:underline">More about Paytm</summary>
+                            <div class="px-4 pb-4">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur quae, eos
+                                    explicabo odit minima libero veniam similique quibusdam doloribus facilis ipsa
+                                    accusantium vel maiores corrupti! Libero voluptate a doloribus?</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary class="py-2 outline-none cursor-pointer focus:underline">Company</summary>
+                            <div class="px-4 pb-4 space-y-2 flex flex-wrap justify-between">
+                                <h2>About Us</h2>
+                                <h2>CSR</h2>
+                                <h2>Filings & Press Releases</h2>
+                                <h2> Blog</h2>
+                                <h2> Terms & Conditions</h2>
+                                <h2> Sustainability</h2>
+                        </details>
+
+                        <p class="py-2 outline-none cursor-pointer focus:underline">Career</p>
+
+                        <details>
+                            <summary class="py-2 outline-none cursor-pointer focus:underline">Recharge & pay bills
+                            </summary>
+                            <div class="px-4 pb-4 space-y-2 flex flex-wrap justify-between">
+                                <h2>About Us</h2>
+                                <h2>CSR</h2>
+                                <h2>Filings & Press Releases</h2>
+                                <h2> Blog</h2>
+                                <h2> Terms & Conditions</h2>
+                                <h2> Sustainability</h2>
+                        </details>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+    </footer>
+
+</body>
+
+</html>
